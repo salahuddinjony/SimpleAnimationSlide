@@ -9,9 +9,7 @@ body{
 }
 .text-ani{
     animation: tcolor 5s infinite;
-}
-marquee{
-    text-align: center;
+    text-align:center;
 }
 @keyframes tcolor{
     0%{
