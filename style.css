@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #666;
+    padding-top: 20px;
+    color: #fff;
+}
+.text-ani{
+    animation: tcolor 5s infinite;
+}
+marquee{
+    text-align: center;
+}
+@keyframes tcolor{
+    0%{
+        color: #fff;
+    }
+    25%{
+    color: #1abc9c;
+    }
+    50%{
+    color: #2ecc71;
+    }
+    75%{
+    color: #e74c3c;
+    }
+    100%{
+   color: #e67e22;
+
+    }
+}
+.slide-image{
+    background: url(img/1.jpg);
+    height:350px;
+    width: 1000px;
+    margin: 100px auto;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+    background: url(img/2.jpg);
+    }
+    50%{
+    background: url(img/3.jpg);
+    }
+    75%{
+    background: url(img/4.jpg);
+    }
+    100%{
+    background: url(img/5.jpg);
+
+    }
+}
